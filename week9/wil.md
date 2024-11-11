@@ -34,3 +34,10 @@ POST 메소드는 캐싱을 지원하지 않으며,<br/>
 같은 요청을 반복해도 항상 같은 결과를 보장하지 않는다.<br/>
 새로운 요소를 생성하거나 로그인등등에 사용된다.<br/>
 request body에 정보가 들어간다.<br/>
+반대로 사용자가 서버에게 데이터를 전송하려면 form 태그를 사용한다.<br/>
+예시는 이렇게 쓰인다.<br/>
+<form action="localhost:8000/create" method="post"><br/>
+    <input type="text"/><br/>
+    <input type="submit"/><br/>
+</form><br/>
+input 태그에서 데이터를 입력받으면, form태그의 action에 있는 주소로 데이터가 전송되는 방식이다.<br/>
